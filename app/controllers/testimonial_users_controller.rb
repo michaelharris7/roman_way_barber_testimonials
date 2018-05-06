@@ -7,9 +7,8 @@ before_action :set_testimonial_user, only: [:show, :update, :destroy]
   end
 
   def show
-    @testimonial_users = TestimonialUser.find(params[:id])
-    # @testimonial_users = TestimonialUser.includes(:comments).find(params[:id])
-    # @comment = Comment.new
+    @testimonial_users = TestimonialUser.includes(:testimonials).find(params[:id])
+    @testimonial = Testimonial.new
 
     render json: @testimonial_users
   end
