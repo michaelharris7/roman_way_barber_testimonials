@@ -7,8 +7,6 @@ class TestimonialsController < ApplicationController
   end
 
   def show
-    @testimonial = Testimonial.find(params[:id])
-
     render json: @testimonial
   end
 

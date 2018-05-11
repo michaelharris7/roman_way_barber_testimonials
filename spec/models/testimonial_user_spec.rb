@@ -1,5 +1,13 @@
 require 'rails_helper'
 
 RSpec.describe TestimonialUser, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe "Creation" do
+    before do
+      @testimonial_user = create(:testimonial_user)
+    end
+
+    it 'can be created' do
+      expect(@testimonial_user).to be_valid
+    end
+  end
 end

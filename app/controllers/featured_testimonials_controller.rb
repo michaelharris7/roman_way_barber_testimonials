@@ -1,9 +1,13 @@
 class FeaturedTestimonialsController < ApplicationController
-  before_action :set_featured_testimonial, only: [:update, :destroy]
+  before_action :set_featured_testimonial, only: [:show, :update, :destroy]
 
   def index
     @featured_testimonials = FeaturedTestimonial.all
     render json: @featured_testimonials
+  end
+
+  def show
+    render json: @featured_testimonial
   end
 
   def create
