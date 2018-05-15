@@ -1,25 +1,27 @@
-# README
+# roman-way-barber-testimonials
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Ruby on Rails microservicing app used for storing and collecting the testimonials related to my devCamp capstone project front-end app on the repository, roman-way-barber-fe, for the Evan's Roman Way Barber / Stylist business.
 
-Things you may want to cover:
+* Ruby version - 2.4.1
+* Rails version - 5.1.6
+* Database creation - Postgres
 
-* Ruby version
 
-* System dependencies
+## Key requirement: Store and collect the news posts related to the related front-end angular app.
 
-* Configuration
+### Components
+- Testimonial json file
 
-* Database creation
+### Features
+- Cabybara testing implementations of rspec tests
+- Collect testimonial data via api connections
+- Compile json file that houses testimonial object data
 
-* Database initialization
+### TODOs:
+- [x] Integrate API connections with front-end app
+- [x] Use TDD with rspec tests
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# roman_way_barber_testimonials
+### Project Requirements:
+- [x] Angular front-end app
+- [x] Rails API implementation
+- [x] Use Github for version control
